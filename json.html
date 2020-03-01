@@ -1,0 +1,59 @@
+<script>
+
+// Object definition for simple data object, e.g. one property/value for each day
+var myObj = {
+	"Monday": "Soup",
+	"Tuesday": "Spaghetti",
+	"Wendesday": "Toast",
+	"Thursday": "Pork chops",
+	"Friday": "Fish and Chips"
+}
+
+console.log(myObj.Monday) // Dot Notation
+console.log(myObj['Monday']) // Bracket Notation
+
+var myMenu = {
+	"Menu": {
+		"Monday": {
+			"Starter": "Soup",
+			"Main": "Steak",
+			"Desert": "Ice Cream"
+		},
+		"Tuesday": {
+			"Starter": "Green Salad",
+			"Main": "Spaghetti",
+			"Desert": "Pudding"
+		},
+		"Wendesday": "Toast",
+		"Thursday": "Pork chops",
+		"Friday": "Fish and Chips"
+	}
+}
+
+// Log the starter dish for Tuesday
+console.log(myMenu.Menu.Tuesday.Starter) // Dot Notation
+
+// Log the main dish for Tuesday
+console.log(myMenu.Menu.Tuesday['Main']) // Bracket Notation
+
+// Log the Friday dish in console
+console.log(myMenu.Menu.Friday) // Bracket Notation
+
+
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+       // Action to be performed when the document is read;
+	console.log(xhttp.responseText); // outputs a string
+	var myMenu2 = JSON.parse(xhttp.responseText);
+	console.log(myMenu2);  // outputs the object
+	console.log(myMenu2.Menu.Tuesday.Starter);
+    }
+};
+xhttp.open("GET", "https://raw.githubusercontent.com/mycourseresource/json-files/master/menu.json", true);
+xhttp.send();
+
+
+
+</script>
