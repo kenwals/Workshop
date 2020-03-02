@@ -4,29 +4,29 @@
 		"lat": 53.34
 	},
 	"weather": [{
-		"id": 801,
+		"id": 802,
 		"main": "Clouds",
-		"description": "few clouds",
-		"icon": "02d"
+		"description": "scattered clouds",
+		"icon": "03d"
 	}],
 	"base": "stations",
 	"main": {
-		"temp": 278.35,
-		"feels_like": 272.2,
-		"temp_min": 277.15,
-		"temp_max": 279.26,
-		"pressure": 988,
-		"humidity": 75
+		"temp": 5.88,
+		"feels_like": 0.11,
+		"temp_min": 5,
+		"temp_max": 6.67,
+		"pressure": 989,
+		"humidity": 59
 	},
 	"visibility": 10000,
 	"wind": {
-		"speed": 6.2,
-		"deg": 250
+		"speed": 5.1,
+		"deg": 240
 	},
 	"clouds": {
-		"all": 20
+		"all": 40
 	},
-	"dt": 1583149265,
+	"dt": 1583151789,
 	"sys": {
 		"type": 1,
 		"id": 1565,
