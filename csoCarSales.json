@@ -1,8 +1,8 @@
 {
 	"dataset": {
 		"dimension": {
-			"Make and Model": {
-				"label": "Make and Model",
+			"MakeandModel": {
+				"label": "MakeandModel",
 				"category": {
 					"index": {
 						"ALF024": 0,
@@ -662,7 +662,7 @@
 					}
 				}
 			},
-			"id": ["Make and Model", "Month", "Statistic"],
+			"id": ["MakeandModel", "Month", "Statistic"],
 			"size": [238, 73, 2],
 			"role": {
 				"time": ["Month"],
